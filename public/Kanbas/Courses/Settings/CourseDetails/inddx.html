@@ -1,0 +1,122 @@
+<html>
+
+<head></head>
+
+<body>
+    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">
+        type="button">Course Details
+    </a>
+    <button>Sections</button>
+    <button>Navigation</button>
+    <button>Apps</button>
+    <button>Feature Options</button>
+    <button>Integrations</button>
+    <hr />
+
+    <h2>Course Details</h2>
+
+    <label for="timeZone">Time Zone:</label>
+    <select id="timeZone">
+        <option>EST</option>
+    </select>
+    <br />
+    <br />
+
+    <div>
+        <label for="participation">Participation:</label>
+        <select id="participation">
+            <option>Term</option>
+        </select>
+        <br />
+        <label>course start date</label><br />
+        <input type="date" value="2020-09-01" /><br />
+        <label>course end date</label><br />
+        <input type="date" value="2020-09-01" /><br />
+        <input type="checkbox" id="beforeTermStartdate">
+        <label for="beforeTermStartdate">Restrict students from viewing course before term start
+            date</label>
+        <br />
+        <input type="checkbox" id="afterTermEnddate">
+        <label for="afterTermEnddate">Restrict students from viewing course after term end date</label>
+        <br />
+        <br />
+    </div>
+
+    <label for="defaultDueTime">Default Due Time:</label>
+    <select id="defaultDueTime">
+        <option>Acount default (11:59pm)</option>
+    </select>
+    <br />
+    <br />
+
+    <label for="language">Language:</label>
+    <select id="language">
+        <option>English</option>
+    </select>
+    <br />
+    <br />
+
+    Large Course:
+    <input type="checkbox" id="largeCourse">
+    <label for="largeCourse">Launch SpeedGrader Filtered by Student Group</label>
+    <br />
+    <br />
+
+    Grading Scheme:
+    <input type="checkbox" id="gradingScheme">
+    <label for="gradingScheme">Enable course grading scheme</label>
+    <br />
+    <br />
+
+    <label for="license">License:</label>
+    <select id="license">
+        <option>Private (Copyrighted)</option>
+    </select>
+    <br />
+    <br />
+
+    File Copyright:
+    <input type="checkbox" id="fileCopyright">
+    <label for="fileCopyright">Copyright and license information must be provided for files before they
+        are published</label>
+    <br />
+    <br />
+
+    <div>
+        <label for="visibility">Visibility:</label>
+        If you need to make your course public please contact your administratior/support.
+        <br />
+        <select id="visibility">
+            <option>Course</option>
+        </select>
+        <br />
+        <input type="checkbox" id="includeCourse">
+        <label for="includeCourse">Include this course in the public course index</label>
+        <br />
+        <br />
+    </div>
+
+    <label for="format">Format:</label>
+    <select id="format">
+        <option>On-Campus</option>
+    </select>
+    <br />
+    <br />
+
+    Mastery Paths:
+    <input type="checkbox" id="masteryPaths">
+    <label for="masteryPaths">Enable individual learning paths for students based on assessment</label>
+    <br />
+    <br />
+
+    <label for="description">Description:</label>
+    <textarea id="description">
+    </textarea>
+    <br />
+    <br />
+
+    <button>Update Course Details</button>
+
+</body>
+
+</html>
