@@ -12,14 +12,23 @@
 <body>
     <!-- Responsive Navbar for small screens -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
-            aria-controls="kanbasNav" aria-expanded="false" aria-label="Toggle Kanbas Navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav"
-            aria-controls="courseNav" aria-expanded="false" aria-label="Toggle Course Navigation">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </button>
+        <input type="checkbox" id="kanbasNavToggle" hidden>
+        <label for="kanbasNavToggle" class="navbar-toggler" data-bs-toggle="collapse"
+        data-bs-target="#kanbasNav" aria-controls="kanbasNav" aria-expanded="false"
+        aria-label="Toggle Kanbas Navigation">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times" style="display:none;"></i>
+        </label>
+
+        <a class="navbar-brand custom-title" href="#">CS0000 Web</a>
+
+        <input type="checkbox" id="navbarToggle" hidden>
+        <label for="navbarToggle" class="navbar-toggler" data-bs-toggle="collapse"
+            data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false"
+            aria-label="Toggle Course Navigation">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-times" style="display:none;"></i>
+        </label>
         <div class="collapse navbar-collapse" id="kanbasNav">
             <ul class="navbar-nav mr-auto">
                 <!-- Kanbas navigation items here -->
@@ -215,24 +224,29 @@
         </div>
         <div class="d-none d-md-block">
             <ul class="wd-navigation">
-                <li class="wd-active">
-                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                </li>
-                <li><a href="http://piazza.com">Piazza</a></li>
-                <li><a href="#">Zoom</a></li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                </li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-
+              <!-- Copy Course Navigation Here -->
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li><a href="#"> Modules</a></li>
+              <li><a href="#"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+              </li>
+              <li><a href="#"> People</a></li>
+              <li><a href="#"> Panopto Video</a></li>
+              <li><a href="#"> Discussions</a></li>
+              <li><a href="#"> Announcements</a></li>
+              <li><a href="#"> Pages</a></li>
+              <li><a href="#"> Files</a></li>
+              <li><a href="#"> Rubrics</a></li>
+              <li><a href="#"> Outcomes</a></li>
+              <li><a href="#"> Collaborations</a></li>
+              <li><a href="#"> Syllabus</a></li>
+              <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
             </ul>
-        </div>
+          </div>
         <div class="flex-fill me-5" style="flex-grow: 1">
             <div class="container mt-3 d-flex justify-content-between">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">

@@ -12,14 +12,21 @@
 <body>
   <!-- Responsive Navbar for small screens -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
+    <input type="checkbox" id="kanbasNavToggle" hidden>
+    <label for="kanbasNavToggle" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
       aria-controls="kanbasNav" aria-expanded="false" aria-label="Toggle Kanbas Navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav"
+      <i class="fa fa-bars"></i>
+      <i class="fa fa-times" style="display:none;"></i>
+    </label>
+
+    <a class="navbar-brand custom-title" href="#">CS0000 Web</a>
+
+    <input type="checkbox" id="navbarToggle" hidden>
+    <label for="navbarToggle" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#courseNav"
       aria-controls="courseNav" aria-expanded="false" aria-label="Toggle Course Navigation">
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    </button>
+      <i class="fa fa-chevron-down"></i>
+      <i class="fa fa-times" style="display:none;"></i>
+    </label>
     <div class="collapse navbar-collapse" id="kanbasNav">
       <ul class="navbar-nav mr-auto">
         <!-- Kanbas navigation items here -->
