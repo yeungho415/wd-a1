@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
 </head>
 
+
 <body>
-  <!-- Responsive Navbar for small screens -->
+
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
       aria-controls="kanbasNav" aria-expanded="false" aria-label="Toggle Kanbas Navigation">
@@ -34,13 +36,13 @@
             <span>Account</span>
           </a>
         </li>
-        <li class="nav-item ms-2 wd-active">
+        <li class="nav-item ms-2">
           <a class="nav-link d-flex align-items-center" href="/Kanbas/Dashboard/screen.html">
             <i class="fa fa-tachometer me-2"></i>
             <span>Dashboard</span>
           </a>
         </li>
-        <li class="nav-item ms-2">
+        <li class="nav-item ms-2 wd-active">
           <a class="nav-link d-flex align-items-center" href="/Kanbas/Courses/Home/screen.html">
             <i class="fa fa-book me-2"></i>
             <span>Courses</span>
@@ -92,7 +94,7 @@
         </li>
         <li><a href="#"> Modules</a></li>
         <li><a href="#"> Piazza</a></li>
-        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li ><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
         <li class="wd-active">
           <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
         </li>
@@ -110,7 +112,6 @@
       </ul>
     </div>
   </nav>
-  <!-- Implement links to Kanbas and Course Navigation -->
   <div class="d-flex">
     <div class="d-none d-md-block">
       <ul class="wd-kanbas-navigation">
@@ -145,7 +146,7 @@
         </li>
         <li><a href="#"> Modules</a></li>
         <li><a href="#"> Piazza</a></li>
-        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li ><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
         <li class="wd-active">
           <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
         </li>
@@ -163,120 +164,251 @@
       </ul>
     </div>
 
+
     <div class="flex-fill">
-      <!-- Breadcrumb -->
-      <div class="container mt-3">
+      <div class="container mt-3 d-flex justify-content-between">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">CS1234.1111.202410</a></li>
+            <li class="breadcrumb-item"><a href="#">CS6620.2024</a></li>
             <li class="breadcrumb-item active" aria-current="page">Assignments</li>
           </ol>
         </nav>
+
+        <button type="button" class="btn btn-light"><i class="fa fa-eye-slash"></i>Student View</button>
       </div>
       <hr />
-      <!-- Search and Buttons -->
       <div class="d-flex justify-content-between mb-2 me-2">
-        <input type="text" class="form-control w-25" placeholder="Search for Assignments" />
+        <input type="text" class="form-control w-25" placeholder="Search for Assignment" />
         <div>
-          <button>+Group</button>
-          <button>+Assignment</button>
-          <button>︙</button>
+          <button type="button" class="btn btn-light"><i class="fa fa-plus"></i>Group</button>
+          <button type="button" class="btn btn-danger"><i class="fa fa-plus"></i>Assignment</button>
+          <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v me-2"></i></button>
         </div>
       </div>
       <hr />
 
-      <div class="ms-5">
-        <div class="list-group mb-3 me-5">
-          <div class="d-flex justify-content-between align-items-center list-group-item">
-            <h3>Assignments</h3>
-            <div>
-              <span class="border rounded px-2">40% of Total</span>
-              <button>+</button>
-              <button>︙</button>
-            </div>
+
+      <div class="list-group mb-3 me-5 " style="border-radius: 0;">
+        <div class="d-flex justify-content-between align-items-center list-group-item"
+          style="background-color: lightgrey;">
+          <div class="d-flex align-items-center">
+            <i class="fa fa-ellipsis-v me-2"></i>
+            <h3 class="mb-0">Assignments</h3>
           </div>
-          <!-- Assignment Items -->
-          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
-            <h5>A1 SETUP</h5>
-            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
-            <h5>A1 HTML</h5>
-            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
-            <h5>A1 CSS</h5>
-            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
-            <h5>A1 BOOTSTRAP</h5>
-            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
-          </a>
+          <div class="d-flex align-items-center">
+            <span class="border rounded px-2 me-2">40% of Total</span>
+            <button type="button" class="btn btn-light me-2"><i class="fa fa-plus"></i></button>
+            <button type="button" class="btn btn-light me-2"><i class="fa fa-ellipsis-v"></i></button>
+          </div>
         </div>
 
-        <div class="list-group mb-3 me-5">
-          <div class="d-flex justify-content-between align-items-center list-group-item">
-            <h3>Quizzes</h3>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems "
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A1 SETUP</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
             <div>
-              <span class="border rounded px-2">10% of Total</span>
-              <button>+</button>
-              <button>︙</button>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
             </div>
           </div>
-          <!-- Quizzes Items -->
-          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
-            Q1
-            <div>Multiple modules | Not available yet | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
-            Q2
-            <div>Multiple modules | Not available yet | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
-            Q3
-            <div>Multiple modules | Not available yet | 100pts</div>
-          </a>
-          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
-            Q4
-            <div>Multiple modules | Not available yet | 100pts</div>
-          </a>
-        </div>
+        </a>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A2 HTML</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A3 CSS</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A4 BOOTSTRAP</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
 
-        <div class="list-group mb-3 me-5">
-          <div class="d-flex justify-content-between align-items-center list-group-item">
-            <h3>Exams</h3>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A5 Javascript</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
             <div>
-              <span class="border rounded px-2">20% of Total</span>
-              <button>+</button>
-              <button>︙</button>
+              <i class="fa fa-check-circle me-2" style="color: green;"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
             </div>
           </div>
-          <!-- Exams Items -->
-          <a href="#" class="list-group-item">
-            Q1
-            <div>Midterm | Not available yet | 100pts</div>
-          </a>
-          <a href="#" class="list-group-item">
-            Q2
-            <div>Final | Not available yet | 100pts</div>
-          </a>
-        </div>
+        </a>
 
-        <div class="list-group mb-3 me-5">
-          <div class="d-flex justify-content-between align-items-center list-group-item">
-            <h3>Project</h3>
+        <a href="/Kanbas/Courses/Assignments/Editor/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">A6 React</h5>
+                <p class="mb-0">Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</p>
+              </div>
+            </div>
             <div>
-              <span class="border rounded px-2">30% of Total</span>
-              <button>+</button>
-              <button>︙</button>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
             </div>
           </div>
-          <!-- Project Items -->
-        </div>
+        </a>
       </div>
+
+
+      <div class="list-group mb-3 me-5" style="border-radius: 0;">
+        <div class="d-flex justify-content-between align-items-center list-group-item"
+          style="background-color: lightgrey;">
+          <div class="d-flex align-items-center">
+            <i class="fa fa-ellipsis-v me-2"></i>
+            <h3 class="mb-0">Quizzes</h3>
+          </div>
+          <div>
+            <span class="border rounded px-2">10% of Total</span>
+            <button class="btn btn-light me-2"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-light me-2"><i class="fa fa-ellipsis-v"></i></button>
+          </div>
+        </div>
+        <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">Q1</h5>
+                <p class="mb-0">Multiple modules | Not available yet | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+        <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">Q2</h5>
+                <p class="mb-0">Multiple modules | Not available yet | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+        <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item list-group-item-subitems"
+          style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">Q3</h5>
+                <p class="mb-0">Multiple modules | Not available yet | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="list-group mb-3 me-5" style="border-radius: 0;">
+        <div class="d-flex justify-content-between align-items-center list-group-item"
+          style="background-color: lightgrey;">
+          <div class="d-flex align-items-center">
+            <i class="fa fa-ellipsis-v me-2"></i>
+            <h3 class="mb-0">Exams</h3>
+          </div>
+          <div>
+            <span class="border rounded px-2">20% of Total</span>
+            <button class="btn btn-light me-2"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-light me-2"><i class="fa fa-ellipsis-v"></i></button>
+          </div>
+        </div>
+        <a href="#" class="list-group-item list-group-item-subitems" style="border-left: 4px solid green">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-ellipsis-v me-2"></i>
+              <i class="fa fa-pencil-square-o me-2"></i>
+              <div>
+                <h5 class="mb-1">Midterm</h5>
+                <p class="mb-0">Not available yet | 100pts</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa fa-check-circle me-2"></i>
+              <i class="fa fa-ellipsis-v me-2"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
-  </div>
-  <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
