@@ -35,3 +35,7 @@
 li a i.fa {
     display: block;
 }
+
+.wd-kanbas-navigation li:nth-child(2) a i {
+    color: white;
+}
