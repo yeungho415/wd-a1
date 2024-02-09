@@ -1,144 +1,282 @@
 <html>
 
-<head></head>
+<head>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+</head>
 
 <body>
-  <table width="100%">
-    <tbody>
-      <tr>
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Account/Profile/Screen.html"> Account</a></li>
-            <li>
-              <a href="#">Dashboard</a>
-            </li>
-            <li>
-              <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-            </li>
-            <li>
-              <a href="#">Calendar</a>
-            </li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
-        <td valign="top">
-          <ul>
-            <li>
-              <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-            </li>
-            <li><a href="#"> Modules</a></li>
-            <li><a href="#"> Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-            <li>
-              <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
-            </li>
-            <li><a href="#"> People</a></li>
-            <li><a href="#"> Panopto Video</a></li>
-            <li><a href="#"> Discussions</a></li>
-            <li><a href="#"> Announcements</a></li>
-            <li><a href="#"> Pages</a></li>
-            <li><a href="#"> Files</a></li>
-            <li><a href="#"> Rubrics</a></li>
-            <li><a href="#"> Outcomes</a></li>
-            <li><a href="#"> Collaborations</a></li>
-            <li><a href="#"> Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
-          </ul>
-        </td>
-        <td valign="top">
-          <table width="100%">
-            <tbody>
-              <tr>
-                <td>
-                  <table width="100%">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <input placeholder="Search for Assignments" />
-                          <button>Group</button>
-                          <button>Assignment</button>
-                          <select>
-                            <option>Edit Assignment Dates</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+  <!-- Responsive Navbar for small screens -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
+      aria-controls="kanbasNav" aria-expanded="false" aria-label="Toggle Kanbas Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav"
+      aria-controls="courseNav" aria-expanded="false" aria-label="Toggle Course Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kanbasNav">
+      <ul class="navbar-nav mr-auto">
+        <!-- Kanbas navigation items here -->
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="http://northeastern.edu">
+            <span>N</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-user me-2"></i>
+            <span>Account</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2 wd-active">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer me-2"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book me-2"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-calendar me-2"></i>
+            <span>Calendar</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-inbox me-2"></i>
+            <span>Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-clock-o me-2"></i>
+            <span>History</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-desktop me-2"></i>
+            <span>Studio</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-share-square-o me-2"></i>
+            <span>Commons</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-question me-2"></i>
+            <span>Help</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="courseNav">
+      <ul class="navbar-nav mr-auto">
+        <!-- Course navigation items here -->
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+        </li>
+        <li><a href="#"> Modules</a></li>
+        <li><a href="#"> Piazza</a></li>
+        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+        </li>
+        <li><a href="#"> People</a></li>
+        <li><a href="#"> Panopto Video</a></li>
+        <li><a href="#"> Discussions</a></li>
+        <li><a href="#"> Announcements</a></li>
+        <li><a href="#"> Pages</a></li>
+        <li><a href="#"> Files</a></li>
+        <li><a href="#"> Rubrics</a></li>
+        <li><a href="#"> Outcomes</a></li>
+        <li><a href="#"> Collaborations</a></li>
+        <li><a href="#"> Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Implement links to Kanbas and Course Navigation -->
+  <div class="d-flex">
+    <div class="d-none d-md-block">
+      <ul class="wd-kanbas-navigation">
+        <li><a href="http://northeastern.edu">N</a></li>
+        <li><a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-user"></i>Account</a></li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer"></i> Dashboard</a>
+        </li>
+        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book"></i>Courses</a> </li>
+        <li><a href="#">
+            <i class="fa fa-calendar"></i> Calendar</a></li>
+        <li><a href="#">
+            <i class="fa fa-inbox"></i> Inbox</a></li>
+        <li><a href="#">
+            <i class="fa fa-clock-o"></i>History</a></li>
+        <li><a href="#">
+            <i class="fa fa-desktop"></i>Studio</a></li>
+        <li><a href="#">
+            <i class="fa fa-share-square-o"></i>Commons</a></li>
+        <li><a href="#">
+            <i class="fa fa-question"></i>Help</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-md-block">
+      <ul class="wd-navigation">
+        <!-- Copy Course Navigation Here -->
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+        </li>
+        <li><a href="#"> Modules</a></li>
+        <li><a href="#"> Piazza</a></li>
+        <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+        </li>
+        <li><a href="#"> People</a></li>
+        <li><a href="#"> Panopto Video</a></li>
+        <li><a href="#"> Discussions</a></li>
+        <li><a href="#"> Announcements</a></li>
+        <li><a href="#"> Pages</a></li>
+        <li><a href="#"> Files</a></li>
+        <li><a href="#"> Rubrics</a></li>
+        <li><a href="#"> Outcomes</a></li>
+        <li><a href="#"> Collaborations</a></li>
+        <li><a href="#"> Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+      </ul>
+    </div>
 
-                  <h3>Assignments 40% of Total</h3>
-                  <select>
-                    <option>Edit</option>
-                  </select>
-                  <ul>
-                    <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1</a><br />
-                      <a href="#">Multiple modules</a> | Due date: 2020-09-01
-                      23:59:59 | 100pts
-                    </li>
-                    <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2</a><br />
-                      <a href="#">Multiple modules</a> | Due date: 2020-09-01
-                      23:59:59 | 100pts
-                    </li>
-                    <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3</a><br />
-                      <a href="#">Multiple modules</a> | Due date: 2020-09-01
-                      23:59:59 | 100pts
-                    </li>
-                    <li>
-                      <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4</a><br />
-                      <a href="#">Multiple modules</a> | Due date: 2020-09-01
-                      23:59:59 | 100pts
-                    </li>
-                  </ul>
-                  <h3>Quizzes 10% of Total</h3>
-                  <select>
-                    <option>Edit</option>
-                  </select>
-                  <ul>
-                    <li><a href="/Kanbas/Courses/Quizzes/screen.html">Q1</a><br />
-                      <a href="#">Multiple modules</a> | Not available yet
+    <div class="flex-fill">
+      <!-- Breadcrumb -->
+      <div class="container mt-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS1234.1111.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+          </ol>
+        </nav>
+      </div>
+      <hr />
+      <!-- Search and Buttons -->
+      <div class="d-flex justify-content-between mb-2 me-2">
+        <input type="text" class="form-control w-25" placeholder="Search for Assignments" />
+        <div>
+          <button>+Group</button>
+          <button>+Assignment</button>
+          <button>︙</button>
+        </div>
+      </div>
+      <hr />
 
-                    </li>
-                    <li><a href="/Kanbas/Courses/Quizzes/screen.html">Q2</a><br />
-                      <a href="#">Multiple modules</a> | Not available yet
-                    </li>
-                    <li><a href="/Kanbas/Courses/Quizzes/screen.html">Q3</a><br />
-                      <a href="#">Multiple modules</a> | Not available yet
+      <div class="ms-5">
+        <div class="list-group mb-3 me-5">
+          <div class="d-flex justify-content-between align-items-center list-group-item">
+            <h3>Assignments</h3>
+            <div>
+              <span class="border rounded px-2">40% of Total</span>
+              <button>+</button>
+              <button>︙</button>
+            </div>
+          </div>
+          <!-- Assignment Items -->
+          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
+            <h5>A1 SETUP</h5>
+            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
+            <h5>A1 HTML</h5>
+            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
+            <h5>A1 CSS</h5>
+            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Assignments/Edit/screen.html" class="list-group-item">
+            <h5>A1 BOOTSTRAP</h5>
+            <div>Multiple modules | Due date: 2020-09-01 23:59:59 | 100pts</div>
+          </a>
+        </div>
 
-                    </li>
-                    <li><a href="/Kanbas/Courses/Quizzes/screen.html">Q4</a><br />
-                      <a href="#">Multiple modules</a> | Not available yet
+        <div class="list-group mb-3 me-5">
+          <div class="d-flex justify-content-between align-items-center list-group-item">
+            <h3>Quizzes</h3>
+            <div>
+              <span class="border rounded px-2">10% of Total</span>
+              <button>+</button>
+              <button>︙</button>
+            </div>
+          </div>
+          <!-- Quizzes Items -->
+          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
+            Q1
+            <div>Multiple modules | Not available yet | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
+            Q2
+            <div>Multiple modules | Not available yet | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
+            Q3
+            <div>Multiple modules | Not available yet | 100pts</div>
+          </a>
+          <a href="/Kanbas/Courses/Quizzes/screen.html" class="list-group-item">
+            Q4
+            <div>Multiple modules | Not available yet | 100pts</div>
+          </a>
+        </div>
 
-                    </li>
-                  </ul>
-                  <h3>Exams 20% of Total</h3>
-                  <select>
-                    <option>Edit</option>
-                  </select>
-                  <ul>
-                    <li><a href="#">Midterm</a> <br /><a href="#">Multiple modules</a> | Not available yet
-                    </li>
-                    <li><a href="#">Final</a> <br /><a href="#">Multiple modules</a> | Not available yet
-                    </li>
-                  </ul>
-                  <h3>Project 30% of Total</h3>
-                  <select>
-                    <option>Edit</option>
-                  </select>
+        <div class="list-group mb-3 me-5">
+          <div class="d-flex justify-content-between align-items-center list-group-item">
+            <h3>Exams</h3>
+            <div>
+              <span class="border rounded px-2">20% of Total</span>
+              <button>+</button>
+              <button>︙</button>
+            </div>
+          </div>
+          <!-- Exams Items -->
+          <a href="#" class="list-group-item">
+            Q1
+            <div>Midterm | Not available yet | 100pts</div>
+          </a>
+          <a href="#" class="list-group-item">
+            Q2
+            <div>Final | Not available yet | 100pts</div>
+          </a>
+        </div>
 
-                  <ul>
-                    <li><a href="#">Project</a> <br /><a href="#">Multiple modules</a> | Not available yet
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="list-group mb-3 me-5">
+          <div class="d-flex justify-content-between align-items-center list-group-item">
+            <h3>Project</h3>
+            <div>
+              <span class="border rounded px-2">30% of Total</span>
+              <button>+</button>
+              <button>︙</button>
+            </div>
+          </div>
+          <!-- Project Items -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

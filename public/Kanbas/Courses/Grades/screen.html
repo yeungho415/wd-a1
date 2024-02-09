@@ -1,6 +1,9 @@
-<html>
+<!-- <html>
 
-<head> </head>
+<head>
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+</head>
 
 <body>
   <table>
@@ -26,13 +29,13 @@
           </ul>
         </td>
         <td valign="top">
-          <ul>
+          <ul class="wd-navigation">
             <li>
               <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
             </li>
             <li><a href="#"> Modules</a></li>
             <li><a href="#"> Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+            <li class="wd-active" ><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
             <li>
               <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
             </li>
@@ -46,7 +49,7 @@
             <li><a href="#"> Outcomes</a></li>
             <li><a href="#"> Collaborations</a></li>
             <li><a href="#"> Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Seetings/CourseDetails/screen.html"> Settings</a></li>
+            <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
           </ul>
         </td>
         <td valign="top">
@@ -152,6 +155,308 @@
       </tr>
     </tbody>
   </table>
+</body>
+
+</html> -->
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+</head>
+
+<body>
+  <!-- Responsive Navbar for small screens -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kanbasNav"
+      aria-controls="kanbasNav" aria-expanded="false" aria-label="Toggle Kanbas Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav"
+      aria-controls="courseNav" aria-expanded="false" aria-label="Toggle Course Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kanbasNav">
+      <ul class="navbar-nav mr-auto">
+        <!-- Kanbas navigation items here -->
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="http://northeastern.edu">
+            <span>N</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-user me-2"></i>
+            <span>Account</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer me-2"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2 wd-active">
+          <a class="nav-link d-flex align-items-center" href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book me-2"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-calendar me-2"></i>
+            <span>Calendar</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-inbox me-2"></i>
+            <span>Inbox</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-clock-o me-2"></i>
+            <span>History</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-desktop me-2"></i>
+            <span>Studio</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-share-square-o me-2"></i>
+            <span>Commons</span>
+          </a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="fa fa-question me-2"></i>
+            <span>Help</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="courseNav">
+      <ul class="navbar-nav mr-auto">
+        <!-- Course navigation items here -->
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+        </li>
+        <li><a href="#"> Modules</a></li>
+        <li><a href="#"> Piazza</a></li>
+        <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+        </li>
+        <li><a href="#"> People</a></li>
+        <li><a href="#"> Panopto Video</a></li>
+        <li><a href="#"> Discussions</a></li>
+        <li><a href="#"> Announcements</a></li>
+        <li><a href="#"> Pages</a></li>
+        <li><a href="#"> Files</a></li>
+        <li><a href="#"> Rubrics</a></li>
+        <li><a href="#"> Outcomes</a></li>
+        <li><a href="#"> Collaborations</a></li>
+        <li><a href="#"> Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Implement links to Kanbas and Course Navigation -->
+  <div class="d-flex">
+    <div class="d-none d-md-block">
+      <ul class="wd-kanbas-navigation">
+        <li><a href="http://northeastern.edu">N</a></li>
+        <li><a href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa fa-user"></i>Account</a></li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html">
+            <i class="fa fa-tachometer"></i> Dashboard</a>
+        </li>
+        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa fa-book"></i>Courses</a> </li>
+        <li><a href="#">
+            <i class="fa fa-calendar"></i> Calendar</a></li>
+        <li><a href="#">
+            <i class="fa fa-inbox"></i> Inbox</a></li>
+        <li><a href="#">
+            <i class="fa fa-clock-o"></i>History</a></li>
+        <li><a href="#">
+            <i class="fa fa-desktop"></i>Studio</a></li>
+        <li><a href="#">
+            <i class="fa fa-share-square-o"></i>Commons</a></li>
+        <li><a href="#">
+            <i class="fa fa-question"></i>Help</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-md-block">
+      <ul class="wd-navigation">
+        <!-- Copy Course Navigation Here -->
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+        </li>
+        <li><a href="#"> Modules</a></li>
+        <li><a href="#"> Piazza</a></li>
+        <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+        </li>
+        <li><a href="#"> People</a></li>
+        <li><a href="#"> Panopto Video</a></li>
+        <li><a href="#"> Discussions</a></li>
+        <li><a href="#"> Announcements</a></li>
+        <li><a href="#"> Pages</a></li>
+        <li><a href="#"> Files</a></li>
+        <li><a href="#"> Rubrics</a></li>
+        <li><a href="#"> Outcomes</a></li>
+        <li><a href="#"> Collaborations</a></li>
+        <li><a href="#"> Syllabus</a></li>
+        <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"> Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="flex-fill">
+      <!-- Breadcrumb -->
+      <div class="container mt-3 ms-4">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS1234.1111.202410</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+          </ol>
+        </nav>
+      </div>
+      <hr />
+
+      <div class="d-flex justify-content-end me-5">
+        <div class="d-flex">
+          <button class="btn btn-primary me-2">
+            <i class="fa fa-download" aria-hidden="true"></i> Import
+          </button>
+          <button class="btn btn-primary me-2">
+            <i class="fa fa-upload" aria-hidden="true"></i> Export
+          </button>
+          <button class="btn btn-primary flex-fill">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-2 me-2 ms-5">
+        <div class="flex-fill mb-2 mb-md-0 me-md-2">
+          <label for="searchStudents" class="form-label">Search Students</label>
+          <input type="text" class="form-control" id="searchStudents" placeholder="Search Students">
+        </div>
+
+        <div class="flex-fill mb-2 mb-md-0 ms-md-2">
+          <label for="searchAssignments" class="form-label">Search Assignments</label>
+          <input type="text" class="form-control" id="searchAssignments" placeholder="Search Assignments">
+        </div>
+      </div>
+
+      <div class="me-5 ms-5">
+        <div class="mb-2">
+          <button class="btn btn-primary">Apply Filters</button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover table-striped">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">A1</th>
+                <th scope="col">A2</th>
+                <th scope="col">A3</th>
+                <th scope="col">A4</th>
+                <th scope="col">A5</th>
+                <th scope="col">A6</th>
+                <th scope="col">Q1</th>
+                <th scope="col">Q2</th>
+                <th scope="col">Q3</th>
+                <th scope="col">Q4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>100</td>
+                <td><input class="form-control" type="text" value="100" /></td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Emily Johnson</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td><input value="100" /></td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Jane Doe</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td><input value="100" /></td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Michael Smith</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td><input value="100" /></td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Jessica Lee</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td><input value="100" /></td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
