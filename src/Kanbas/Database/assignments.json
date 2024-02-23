@@ -1,0 +1,11 @@
+[
+    { "_id": "A101", "title": "C++ Assignment 1", "course": "CS101" },
+    { "_id": "A102", "title": "C++ Assignment 2", "course": "CS101" },
+    { "_id": "A103", "title": "C++ Assignment 3", "course": "CS101" },
+    { "_id": "A201", "title": "HTML Assignment 1", "course": "CS102" },
+    { "_id": "A202", "title": "HTML Assignment 2", "course": "CS102" },
+    { "_id": "A203", "title": "HTML Assignment 3", "course": "CS102" },
+    { "_id": "A301", "title": "Java Assignment 1", "course": "CS103" },
+    { "_id": "A302", "title": "Java Assignment 2", "course": "CS103" },
+    { "_id": "A303", "title": "Java Assignment 3", "course": "CS103" }
+  ]

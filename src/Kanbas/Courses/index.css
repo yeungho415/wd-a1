@@ -1,0 +1,12 @@
+.title {
+    color: red;
+    display: flex;
+    flex-direction: row;
+}
+.title span {
+    color: grey
+}
+.navigation {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

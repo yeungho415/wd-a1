@@ -1,0 +1,79 @@
+.wd-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.wd-navigation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-navigation li.wd-active {
+    border-left: 2px solid black;
+}
+
+.wd-navigation li.wd-active a {
+    color: black;
+}
+
+.wd-navigation a {
+    color: red;
+    text-decoration: none;
+}
+
+
+.fa-times {
+    display: none;
+}
+
+#navbarToggle:checked + label .fa-chevron-down {
+    display: none;
+}
+
+#navbarToggle:checked + label .fa-times {
+    display: inline-block !important;
+}
+
+#kanbasNavToggle:not(:checked) + label .fa-times {
+    display: none;
+}
+
+#kanbasNavToggle:checked + label .fa-bars {
+    display: none;
+}
+#kanbasNavToggle:checked + label .fa-times {
+    display: inline-block !important;
+}
+
+#kanbasNavToggle:checked + .navbar-title {
+    display: none !important;
+}
+
+#kanbasNav {
+    background-color: white;
+}
+
+#kanbasNav .nav-link,
+#kanbasNav .nav-link i,
+#kanbasNav .nav-link span {
+    color: red;
+}
+
+#courseNav {
+    background-color: white;
+}
+
+#courseNav a {
+    color: red;
+}
+
+#courseNav .fa {
+    color: red;
+}

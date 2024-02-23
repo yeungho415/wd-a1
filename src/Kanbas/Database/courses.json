@@ -1,0 +1,6 @@
+[ { "_id": "CS101", "name": "C++", "number": "CS4550", "startDate": "2023-01-10",
+    "endDate": "2023-05-15", "image": "c++-icon.webp"  },
+  { "_id": "CS102", "name": "HTML", "number": "CS4560", "startDate": "2023-01-10",
+    "endDate": "2023-05-15", "image": "html-icon.webp"  },
+  { "_id": "CS103", "name": "Java", "number": "CS4570", "startDate": "2023-01-10",
+    "endDate": "2023-05-15", "image": "java-icon.png"  } ]

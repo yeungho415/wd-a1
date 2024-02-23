@@ -1,0 +1,80 @@
+[
+    {
+      "_id": "M101",
+      "name": "C++",
+      "description": "Intro to C++",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "Week 0 - INTRO",
+          "description": "intro",
+          "module": "M101"
+        },
+        {
+          "_id": "L102",
+          "name": "Week 1 - C++",
+          "description": "C++",
+          "module": "M101"
+        },
+        {
+          "_id": "L103",
+          "name": "Week 3 - C++",
+          "description": "C++",
+          "module": "M101"
+        }
+      ]
+    },
+    {
+      "_id": "M102",
+      "name": "HTML",
+      "description": "Intro to HTML",
+      "course": "CS102",
+      "lessons": [
+        {
+          "_id": "L201",
+          "name": "Week 0 - INTRO",
+          "description": "intro",
+          "module": "M102"
+        },
+        {
+          "_id": "L202",
+          "name": "Week 1 - HTML",
+          "description": "HTML",
+          "module": "M102"
+        },
+        {
+          "_id": "L203",
+          "name": "Week 2 - HTML",
+          "description": "HTML",
+          "module": "M102"
+        }
+      ]
+    },
+    {
+      "_id": "M103",
+      "name": "Java",
+      "description": "Intro to Java",
+      "course": "CS103",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Week 0 - INTRO",
+          "description": "intro",
+          "module": "M103"
+        },
+        {
+          "_id": "L302",
+          "name": "Week 1 - Java",
+          "description": "Java",
+          "module": "M103"
+        },
+        {
+          "_id": "L303",
+          "name": "Week 2 - Java",
+          "description": "Java",
+          "module": "M103"
+        }
+      ]
+    }
+  ]
