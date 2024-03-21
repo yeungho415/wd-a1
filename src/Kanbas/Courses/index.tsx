@@ -15,7 +15,7 @@ import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import "./index.css";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const location = useLocation();
   const course = courses.find((course) => course._id === courseId);
@@ -46,7 +46,7 @@ function Courses() {
         <div className="col-md-2">
           <CourseNavigation />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-10">
           <div
             className=" bottom-0 end-0"
             style={{ left: "320px", top: "50px" }}
@@ -63,28 +63,6 @@ function Courses() {
               />
               <Route path="Grades" element={<Grades />} />
             </Routes>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div>
-            <h2>Status</h2>
-            <button className="btn btn-light">Unpublish</button>
-            <button className="btn btn-success">Publish</button>
-            <br />
-            <button className="btn btn-light">Import Existing Content</button>
-            <br />
-            <button className="btn btn-light">Import From Commons</button>
-            <br />
-            <button className="btn btn-light">Choose Home Page</button>
-            <br />
-            <button className="btn btn-light">View Course Stream</button>
-            <br />
-            <button className="btn btn-light">New Announcement</button>
-            <br />
-            <button className="btn btn-light">New Analytics</button>
-            <br />
-            <button className="btn btn-light">View Course Notifications</button>
-            <br />
           </div>
         </div>
       </div>
