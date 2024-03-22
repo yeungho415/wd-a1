@@ -8,7 +8,7 @@ import store from "./store";
 import { Provider } from "react-redux";
 
 function Kanbas() {
-  const [courses_state, setCourses] = useState<any[]>(courses);
+  const [courses_state, setCourses] = useState(courses);
   const [course, setCourse] = useState({
     _id: "1234",
     name: "New Course",
@@ -19,16 +19,16 @@ function Kanbas() {
   });
   const addNewCourse = () => {
     setCourses([
-      ...courses,
+      ...courses_state,
       { ...course, _id: new Date().getTime().toString() },
     ]);
   };
-  const deleteCourse = (courseId: any) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+  const deleteCourse = (courseId: string) => {
+    setCourses(courses_state.filter((course) => course._id !== courseId));
   };
   const updateCourse = () => {
     setCourses(
-      courses.map((c) => {
+      courses_state.map((c) => {
         if (c._id === course._id) {
           return course;
         } else {
