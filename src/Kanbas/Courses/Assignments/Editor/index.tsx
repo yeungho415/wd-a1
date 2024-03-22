@@ -30,7 +30,7 @@ function AssignmentEditor() {
     if (assignmentId === "new") {
       dispatch(addAssignment({ ...assignment, course: courseId }));
     } else {
-      dispatch(updateAssignment({ ...assignment, course: courseId }));
+      dispatch(updateAssignment({ assignment }));
     }
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };

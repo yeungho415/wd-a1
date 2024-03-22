@@ -72,6 +72,21 @@ function Assignments() {
     setSelectedAssignmentId("");
   };
 
+  const handleAdd = () => {
+    dispatch(
+      setAssignment({
+        title: "New Assignment 123",
+        course: "",
+        description: "description",
+        points: "100",
+        dueDate: "dd/mm/yyyy",
+        availableFromDate: "dd/mm/yyyy",
+        availableUntilDate: "dd/mm/yyyy",
+      })
+    );
+    NavigateAssignmentEditor("new")
+  }
+
   return (
     <div className="list-group mb-3 me-5">
         <ConfirmDialog
@@ -91,7 +106,7 @@ function Assignments() {
           <span className="border rounded px-2">40% of Total</span>
           <button
             className="btn btn-light me-2"
-            onClick={() => NavigateAssignmentEditor("new")}
+            onClick={handleAdd}
           >
             <FaPlusCircle />
           </button>
